@@ -1,0 +1,263 @@
+body{
+    font-family: sans-serif;
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+    margin: auto;
+}
+
+th {
+    font-weight: 500;
+}
+
+.likert{
+    /*padding:0 5px;*/
+    
+}
+
+#button_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: none;
+    width: 700px;
+    height: 700px;
+}
+
+#start_button {
+    width: 310px;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+}
+
+#graph_box {
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type="radio"] {
+    margin-right: 7px;
+}
+
+input[type="range"] {
+    width: 400px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+#people20{
+    width: 448px;
+    margin: auto;
+    display: block;
+}
+
+.legend{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+#graph {
+    width: 500px;
+    display: block;
+    margin:auto;
+}
+
+.demographics {
+    display: block;
+    width: 300px;
+    padding-right: 50px;
+}
+
+#people {
+    /*width: 250px;*/
+    display: block;
+    margin: auto;
+/*    margin-top: 30px;
+    margin-bottom: 22px;
+*/}
+
+.cml_row {
+    padding-bottom: 3px;
+}
+.task-description{
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+#comprehension_output {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.submit input{
+    float:right;
+    background-color: #EEEEEE;/*#4CAF50; /* Green */
+    /*border: none;*/
+    /*color: black;*/
+    padding: 3px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+}
+
+/* .submit {
+    display: none;
+} */
+
+#helper-text {
+    padding-left: 15px;
+    font-size: 14px;
+    color: grey;
+}
+
+#reminder-text {
+    padding-left: 15px;
+    font-size: 14px;
+    color: green;
+    text-align: center;
+    border: solid;
+    border-width: 2px;
+    border-color: green;
+    font-weight: 700;
+}
+
+#slider-box {
+    border: solid;
+    border-color: lightgray;
+    border-width: 2px;
+    width: 550px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    float:right;
+    background-color: #EEEEEE;/*#4CAF50; /* Green */
+    /*border: none;*/
+    /*color: black;*/
+    padding: 3px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+
+}
+
+textarea {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  margin: 0;
+}
+
+#why_no {
+    width: 690px;
+}
+
+input[type=number] { 
+  width: 50px;
+  /* height: 25px; */
+  font-size: 17px;
+  text-align: right;
+  padding: 2px;
+  padding-right: 5px;
+  margin-right: 4px;
+}
+
+input[type=text] {
+    font-size: 15px;
+}
+
+ #window_too_narrow {
+     display: none;
+     width: 700px;
+     height: 700px;
+     margin:auto;
+     padding: 100px 200px;
+     border-style: dotted;
+     box-sizing: border-box;
+ }
+
+ #window_too_short {
+    display: none;
+     width: 700px;
+     height: 700px;
+     margin:auto;
+     padding: 100px 200px;
+     border-style: dotted;
+     box-sizing: border-box;
+}
+
+ #window_too_small {
+    display: none;
+     width: 700px;
+     height: 700px;
+     margin:auto;
+     padding: 100px 200px;
+     border-style: dotted;
+     box-sizing: border-box;
+} 
+ 
+
+ 
+@media only screen and (max-width: 700px) {
+
+ #content div {
+     display: none;
+ }  
+ 
+ #window_too_narrow {
+     display: block;
+ }
+ 
+ 
+}
+
+@media only screen and (max-height: 700px) {
+
+ #content div {
+     display: none;
+ }  
+ 
+ #window_too_short {
+     display: block;
+ }
+ 
+ 
+}
+
+@media only screen and (max-height: 700px) and (max-width: 700px) {
+ body {
+     width: 95%;
+ }
+ #content div {
+     display: none;
+ }  
+ 
+ #window_too_small {
+     display: block;
+     width: 300px;
+ }
+ 
+ #window_too_narrow, #window_too_short {
+     display: none;
+ }
+ 
+ 
+}

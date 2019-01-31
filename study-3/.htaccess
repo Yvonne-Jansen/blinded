@@ -1,0 +1,9 @@
+## make sure nobody gets the htaccess, README, COPYING or VERSION files
+<Files ~ "^([\._]ht|README$|VERSION$|COPYING$)">
+    Order allow,deny
+    Deny from all
+</Files>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
